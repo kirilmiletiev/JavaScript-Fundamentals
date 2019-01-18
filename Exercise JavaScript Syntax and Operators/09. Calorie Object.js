@@ -19,5 +19,5 @@ function Calorie(arr) {
 
     }
 
-    console.log(result)
+    console.log(result);
 }

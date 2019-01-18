@@ -1,4 +1,4 @@
 function Hello(name) {
 
-    console.log(`Hello ${name}, do you like JavaScript?`)
+    console.log(`Hello ${name}, do you like JavaScript?`);
 }

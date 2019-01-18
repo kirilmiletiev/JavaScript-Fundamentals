@@ -37,7 +37,7 @@ function coffeeMachine(input) {
         let change = coins - price;
         let moneyNeeded = price - coins;
         if (coins >= price) {
-            console.log(`You ordered ${drink}. Price: ${price.toFixed(2)}$ Change: ${change.toFixed(2)}$`)
+            console.log(`You ordered ${drink}. Price: ${price.toFixed(2)}$ Change: ${change.toFixed(2)}$`);
             totalSum += price;
         } else {
             console.log(`Not enough money for ${drink}. Need ${moneyNeeded.toFixed(2)}$ more.`);
