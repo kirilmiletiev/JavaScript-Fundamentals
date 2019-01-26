@@ -8,9 +8,7 @@ function solve() {
         'spice': function (num) { return num + 1; },
         'bake': function (num) { return num * 3; },
         'fillet': function (num) {
-            num = num;
-            var val = num - (num * 0.20);
-            return val;
+            return num * 0.8;
         }
     };
 
