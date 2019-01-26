@@ -1,5 +1,5 @@
 function solve() {
-    let input = document.getElementById('arr').value;
+    let input = document.getElementById('arr').value; 
     let rawText = '';
     let arrayToPrint = [];
     let resultElement = document.getElementById('result');
