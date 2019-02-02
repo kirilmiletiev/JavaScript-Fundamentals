@@ -1,7 +1,7 @@
 function solve() {
     let str = document.getElementById('str').value;
     let text = document.getElementById('text').value;
-    let result = document.getElementById('result');
+    let resultElement = document.getElementById('result');
 
     let pattern = /(north|east)[\s\S]*?(\d{2})[^,]*?,[^,]*?(\d{6})/gmi;
     let match = pattern.exec(text);
@@ -24,13 +24,14 @@ function solve() {
 
     let p1 = document.createElement('p');
     p1.textContent = north;
-    result.appendChild(p1);
-
+	
     let p2 = document.createElement('p');
     p2.textContent = east;
-    result.appendChild(p2);
-
+	
     let p3 = document.createElement('p');
     p3.textContent = message;
-    result.appendChild(p3);
+
+    resultElement.appendChild(p1);
+    resultElement.appendChild(p2);
+    resultElement.appendChild(p3);
 }
